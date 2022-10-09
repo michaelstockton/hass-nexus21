@@ -1,0 +1,27 @@
+{
+  "config": {
+    "flow_title": "{name} ({ip_address})",
+    "step": {
+      "user": {
+        "title": "Add a Nexus 21 Lift Motor",
+        "description": "[%key:common::config_flow::description::confirm_setup%]",
+        "data": {
+          "name": "[%key:common::config_flow::data::name%]",
+          "host": "[%key:common::config_flow::data::name%]",
+          "ip_address": "[%key:common::config_flow::data::ip%]",
+          "mac": "MAC Address of lift motor IP module"
+        }
+      },
+      "confirm": {
+        "description": "Do you want to set up {ip_address}?",
+        "data": {
+          "name": "[%key:common::config_flow::data::name%]"
+        }
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "[%key:common::config_flow::abort::single_instance_allowed%]",
+      "no_devices_found": "[%key:common::config_flow::abort::no_devices_found%]"
+    }
+  }
+}

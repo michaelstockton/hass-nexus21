@@ -1,0 +1,27 @@
+{
+    "config": {
+        "abort": {
+            "no_devices_found": "No devices found on the network",
+            "single_instance_allowed": "Already configured. Only a single configuration possible."
+        },
+        "flow_title": "{name} ({ip_address})",
+        "step": {
+            "confirm": {
+                "data": {
+                    "name": "Name"
+                },
+                "description": "Do you want to set up {ip_address}?"
+            },
+            "user": {
+                "data": {
+                    "host": "Name",
+                    "ip_address": "IP Address",
+                    "mac": "MAC Address of lift motor IP module",
+                    "name": "Name"
+                },
+                "description": "Do you want to start set up?",
+                "title": "Add a Nexus 21 Lift Motor"
+            }
+        }
+    }
+}
