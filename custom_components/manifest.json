@@ -1,0 +1,24 @@
+{
+  "domain": "nexus21",
+  "name": "Nexus21",
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/integrations/nexus21",
+  "requirements": [],
+  "ssdp": [
+    {
+      "st": "urn:nexus21:service:basicevent:1"
+    }
+  ],
+  "dhcp": [
+    { "hostname": "iplinbox_*", "macaddress": "801F12*" }, 
+    { "macaddress": "801F12*" }
+  ],
+  "zeroconf": [],
+  "homekit": {},
+  "dependencies": [ "ssdp" ],
+  "codeowners": [
+    "@michaelstockton"
+  ],
+  "iot_class": "local_polling",
+  "version": "0.0.1"
+}
